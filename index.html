@@ -8,28 +8,49 @@
 </head>
 <body>
     <header>
-        <h1>Recursos de Apoyo para Estudios</h1>
+        <h1>Trabajos_Internos: Recursos de Apoyo para Estudios</h1>
     </header>
     
     <main>
-        <section>
+        <section id="consejos">
             <h2>Consejos de Estudio</h2>
             <p>Consejos y técnicas para mejorar tu rendimiento académico.</p>
+            <button onclick="mostrarConsejos()">Mostrar Consejos</button>
         </section>
 
-        <section>
+        <section id="recursos">
             <h2>Recursos en Línea</h2>
             <p>Enlaces a sitios web y plataformas que ofrecen material educativo gratuito.</p>
+            <button onclick="mostrarRecursos()">Mostrar Recursos</button>
         </section>
 
-        <section>
+        <section id="asesoramiento">
             <h2>Asesoramiento Psicológico</h2>
             <p>Recursos para el bienestar emocional y apoyo psicológico.</p>
+            <button onclick="mostrarAsesoramiento()">Mostrar Asesoramiento</button>
+        </section>
+
+        <section id="enviar-trabajo">
+            <h2>Enviar Trabajo para Mejorar Nota</h2>
+            <button onclick="mostrarFormulario()">Enviar Información</button>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Recursos de Apoyo para Estudios</p>
+        <p>&copy; 2024 Trabajos_Internos: Recursos de Apoyo para Estudios</p>
     </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        function mostrarFormulario() {
+            var trabajoInfo = prompt("Ingrese la información sobre el trabajo que desea mejorar a nota:");
+            if (trabajoInfo !== null && trabajoInfo.trim() !== "") {
+                alert("Gracias por enviar la información. Trabajaremos para proporcionar recursos que te ayuden.");
+            } else {
+                alert("No se ingresó información. Por favor, inténtelo de nuevo si desea enviar detalles sobre su trabajo.");
+            }
+        }
+    </script>
 </body>
 </html>
