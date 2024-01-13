@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recursos de Apoyo para Estudios</title>
+    <title>Trabajos Interiorano</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Trabajos_Internos: Recursos de Apoyo para Estudios</h1>
+        <h1>Trabajos Interiorano</h1>
+        <p>Tu fuente de recursos para el éxito académico.</p>
     </header>
     
     <main>
-        <section id="consejos">
-            <h2>Consejos de Estudio</h2>
-            <p>Consejos y técnicas para mejorar tu rendimiento académico.</p>
-            <button onclick="mostrarConsejos()">Mostrar Consejos</button>
+        <section id="cursos">
+            <h2>Cursos en Línea</h2>
+            <p>Descubre cursos en línea para mejorar tus habilidades. ¡Amplía tus conocimientos y alcanza tus metas académicas!</p>
+            <button onclick="mostrarCursos()">Explorar Cursos</button>
         </section>
 
         <section id="recursos">
-            <h2>Recursos en Línea</h2>
-            <p>Enlaces a sitios web y plataformas que ofrecen material educativo gratuito.</p>
-            <button onclick="mostrarRecursos()">Mostrar Recursos</button>
+            <h2>Recursos Educativos</h2>
+            <p>Explora materiales educativos gratuitos y útiles. Encuentra libros, videos y más para apoyar tu aprendizaje.</p>
+            <button onclick="mostrarRecursos()">Ver Recursos</button>
         </section>
 
         <section id="asesoramiento">
-            <h2>Asesoramiento Psicológico</h2>
-            <p>Recursos para el bienestar emocional y apoyo psicológico.</p>
-            <button onclick="mostrarAsesoramiento()">Mostrar Asesoramiento</button>
+            <h2>Asesoramiento Académico</h2>
+            <p>Obtén consejos y orientación para tus estudios. Nuestro equipo está aquí para ayudarte a alcanzar tu máximo potencial académico.</p>
+            <button onclick="mostrarAsesoramiento()">Conseguir Asesoramiento</button>
         </section>
 
         <section id="enviar-trabajo">
@@ -37,20 +38,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Trabajos_Internos: Recursos de Apoyo para Estudios</p>
+        <p>&copy; 2024 Trabajos Interiorano - Tu éxito académico es nuestra prioridad</p>
     </footer>
 
     <script src="script.js"></script>
-
-    <script>
-        function mostrarFormulario() {
-            var trabajoInfo = prompt("Ingrese la información sobre el trabajo que desea mejorar a nota:");
-            if (trabajoInfo !== null && trabajoInfo.trim() !== "") {
-                alert("Gracias por enviar la información. Trabajaremos para proporcionar recursos que te ayuden.");
-            } else {
-                alert("No se ingresó información. Por favor, inténtelo de nuevo si desea enviar detalles sobre su trabajo.");
-            }
-        }
-    </script>
 </body>
 </html>
