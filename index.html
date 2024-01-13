@@ -13,27 +13,27 @@
     </header>
     
     <main>
-        <section id="cursos">
-            <h2>Cursos en Línea</h2>
-            <p>Descubre cursos en línea para mejorar tus habilidades. ¡Amplía tus conocimientos y alcanza tus metas académicas!</p>
-            <button onclick="mostrarCursos()">Explorar Cursos</button>
-        </section>
-
-        <section id="recursos">
-            <h2>Recursos Educativos</h2>
-            <p>Explora materiales educativos gratuitos y útiles. Encuentra libros, videos y más para apoyar tu aprendizaje.</p>
-            <button onclick="mostrarRecursos()">Ver Recursos</button>
-        </section>
-
-        <section id="asesoramiento">
-            <h2>Asesoramiento Académico</h2>
-            <p>Obtén consejos y orientación para tus estudios. Nuestro equipo está aquí para ayudarte a alcanzar tu máximo potencial académico.</p>
-            <button onclick="mostrarAsesoramiento()">Conseguir Asesoramiento</button>
-        </section>
-
         <section id="enviar-trabajo">
             <h2>Enviar Trabajo para Mejorar Nota</h2>
-            <button onclick="mostrarFormulario()">Enviar Información</button>
+            <form id="trabajoForm" onsubmit="enviarInformacion(event)">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="materia">Materia:</label>
+                <input type="text" id="materia" name="materia" required>
+
+                <label for="fechaEntrega">Fecha de Entrega:</label>
+                <input type="date" id="fechaEntrega" name="fechaEntrega" required>
+
+                <label for="metodoPago">Método de Pago:</label>
+                <select id="metodoPago" name="metodoPago" required>
+                    <option value="tarjeta">Tarjeta de Crédito</option>
+                    <option value="transferencia">Transferencia Bancaria</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+
+                <button type="submit">Enviar Información</button>
+            </form>
         </section>
     </main>
 
@@ -42,5 +42,20 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        function enviarInformacion(event) {
+            event.preventDefault();
+
+            var nombre = document.getElementById('nombre').value;
+            var materia = document.getElementById('materia').value;
+            var fechaEntrega = document.getElementById('fechaEntrega').value;
+            var metodoPago = document.getElementById('metodoPago').value;
+
+            // Aquí deberías enviar estos datos a tu servidor para que maneje el envío del correo.
+            // Puedes utilizar tecnologías como Node.js, PHP, Python, etc., para manejar el envío del correo electrónico.
+            // La siguiente línea solo es un ejemplo de cómo podrías imprimir estos datos en la consola.
+            console.log('Nombre:', nombre, 'Materia:', materia, 'Fecha de Entrega:', fechaEntrega, 'Método de Pago:', metodoPago);
+        }
+    </script>
 </body>
 </html>

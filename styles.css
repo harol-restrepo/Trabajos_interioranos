@@ -25,6 +25,20 @@ section {
     margin-bottom: 20px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, select {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
 button {
     background-color: #3498db;
     color: white;
@@ -38,12 +52,8 @@ button:hover {
     background-color: #2980b9;
 }
 
-footer {
-    background-color: #3498db;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.confirmation-message {
+    color: #27ae60;
+    font-weight: bold;
+    margin-top: 10px;
 }
